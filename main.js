@@ -38,6 +38,11 @@ function containsDigit(string) {
 	return false;
 }
 
+function exclaim(str) {
+	
+}
+
+
 function containsLowerCase(str) {
     if (str.toUpperCase !== str) {
         return false;
