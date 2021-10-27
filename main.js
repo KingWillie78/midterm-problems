@@ -11,34 +11,34 @@ function halfSquare(num) {
 
 function isLong(str) {
 	if(str.length >= 15){
-	  return true
+	  return true;
 	}
 	else {
-	  return false
+	  return false;
 	}
   }
 
 function exclaim(str) {
     console.log(str);
     for (let char = 0; char < str.length; char++) {
-        console.log(str.length)
+        console.log(str.length);
         const point = str[char];
         console.log(point);
-        while (point[char] !== '!') {
+        while (point[char] !== '!'); {
 
         }
     }
 }
 
 function countWords(str) {
-	const arr =  str.split(" ")
-	return arr.length
+	const arr =  str.split(" ");
+	return arr.length;
 }
 
 function containsDigit(string) {
 	let newString = [];
 	newString = string.split("");
-	if (string === "") {
+	if (string === ""){
 		return false;
 	}
 	for (let i = 0; i < newString.length; i++) {
@@ -51,20 +51,20 @@ function containsDigit(string) {
 
 function containsLowerCase(str) {
     if (str.toUpperCase !== str) {
-        return false
+        return false;
     } else { return true; }
 }
 
 function containsUpperCase(str) {
     if (str.toUpperCase === str) {
         return true;
-    } else { return false }
+    } else { return false; }
 }
 
 function containsNonAlphanumeric(str) {
     if (containsDigit(str) || containsLowerCase(str) || containsUpperCase(str) === true) {
         return false;
-    } else { return true }
+    } else { return true; }
 }
 
 function containsSpace(str) {
@@ -82,10 +82,10 @@ function containsSpace(str) {
 }
 
 function digits(num) {
-	let arr = []
-	const str = num.toString()
+	let arr = [];
+	const str = num.toString();
 	for(const n of str){
-		let temp = Number(n)
+		let temp = Number(n);
 		if(!isNaN(temp)){
 			arr.push(temp)
 		}
@@ -108,10 +108,10 @@ function isValidPassword(passMe) {
         return console.log('Invalid Password');
     }
     if (containsNonAlphanumeric === false) {
-        return console.log('Invalid Password')
+        return console.log('Invalid Password');
     }
     if (containsUpperCase) {
-        return console.log('Invalid Password')
+        return console.log('Invalid Password');
     } else {
         return true;
     }
@@ -124,7 +124,7 @@ function onlyPunchy(arr) {
 			newArr.push(exclaim(title));
 		}
 	}
-	return newArr
+	return newArr;
 }
 
 
