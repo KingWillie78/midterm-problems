@@ -18,17 +18,6 @@ function isLong(str) {
 	}
   }
 
-function exclaim(str) {
-    console.log(str);
-    for (let char = 0; char < str.length; char++) {
-        console.log(str.length);
-        const point = str[char];
-        console.log(point);
-        while (point[char] !== '!'); {
-
-        }
-    }
-}
 
 function countWords(str) {
 	const arr =  str.split(" ");
